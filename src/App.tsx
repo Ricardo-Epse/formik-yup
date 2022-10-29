@@ -5,6 +5,8 @@ import { FormikPages } from './forms/Pages/FormikPages';
 import { FormikYubPage } from './forms/Pages/FormikYubPage';
 import { FormikComponents } from './forms/Pages/FormikComponents';
 import { FormikAbstract } from './forms/Pages/FormikAbstract';
+import { RegisterFormikPage } from './forms/Pages/RegisterFormikPage';
+import { DynamicForm } from './forms/Pages/DynamicForm';
 
 export const App = () => {
   return (
@@ -13,7 +15,9 @@ export const App = () => {
       {/* <FormikPages /> */}
       {/* <FormikYubPage/> */}
       {/* <FormikComponents/> */}
-      <FormikAbstract/>
+      {/* <FormikAbstract/> */}
+      {/* <RegisterFormikPage/> */}
+      <DynamicForm />
     </div>
   )
 }
