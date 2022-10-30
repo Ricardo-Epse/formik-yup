@@ -4,20 +4,56 @@
         "name": "firstName",
         "placeholder" : "Ricardo",
         "label" : "First Name",
-        "value" : ""
-    },
-    {
-        "type" : "input",
-        "name": "lastName",
-        "placeholder" : "Ricardo",
-        "label" : "First Name",
-        "value" : ""
+        "value" : "",
+        "validations" : [
+            {
+                "type" : "required"
+            } ,
+            {
+                "type" : "minLength",
+                "value" : 5
+            }
+        ]
     },
     {
         "type" : "email",
         "name": "email",
+        "placeholder" : "Ingresa tu email",
+        "label" : "Email",
+        "value" : "",
+        "validations" : [
+            {
+                "type" : "required"
+            } ,
+            {
+                "type" : "email"
+            }
+        ]
+    },
+    {
+        "type" : "select",
+        "name": "favoriteGame",
         "placeholder" : "Ricardo",
-        "label" : "First Name",
-        "value" : ""
+        "label" : "Favorite Game",
+        "value" : "",
+        "options" : [
+            {
+                "id" : 1,
+                "label" : "Metal"
+            },
+            {
+                "id" : 2,
+                "label" : "SuperMario"
+            },
+            {
+                "id" : 3,
+                "label" : "COD"
+            }
+        ],
+        "validations" : [
+            {
+                "type" : "required"
+            }
+        ]
     }
 ]
